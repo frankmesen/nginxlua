@@ -1,5 +1,6 @@
 FROM alpine:3.5
 
+ADD VERSION .
 
 RUN apk add --no-cache --virtual .build-deps nginx-mod-http-lua nginx-lua
 
