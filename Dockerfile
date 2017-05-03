@@ -1,7 +1,7 @@
 FROM alpine:3.5
 
 RUN apk add --no-cache --virtual .build-deps nginx-mod-http-lua nginx-lua
-RUN apk add --no-cache --virtual gettext
+
 RUN mkdir -p /run/nginx && mkdir -p /etc/nginx/lua
 
 COPY ./conf/* /etc/nginx/conf.d/
