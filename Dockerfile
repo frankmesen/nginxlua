@@ -1,4 +1,4 @@
-FROM alpine:3.5
+FROM alpine:3.7
 
 RUN apk add --no-cache --virtual .build-deps nginx-mod-http-lua nginx-lua
 
